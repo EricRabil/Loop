@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showImagePicker: Bool = false
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack {
+            Button("Pick image") {
+                self.showImagePicker.toggle()
+            }
+        }
+        .sheet(isPresented: $showImagePicker) {
+            ImagePickerView(sourceType: .photoLibrary) { image in
+                print(image)
+            }
+        }
     }
 }
 

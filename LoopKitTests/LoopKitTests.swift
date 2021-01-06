@@ -1,14 +1,14 @@
 //
-//  LoopUITests.swift
-//  LoopUITests
+//  LoopKitTests.swift
+//  LoopKitTests
 //
-//  Created by Eric Rabil on 7/29/20.
+//  Created by Eric Rabil on 7/28/20.
 //
 
 import XCTest
-@testable import LoopUI
+@testable import LoopKit
 
-class LoopUITests: XCTestCase {
+class LoopKitTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
